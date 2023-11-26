@@ -48,7 +48,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("MyPolicy",
         builder =>
         {
-            builder.WithOrigins("*", "*") // Замените эти источники на актуальные для вашего приложения
+            builder.WithOrigins("*", "https://localhost:3000") // Замените эти источники на актуальные для вашего приложения
                    .AllowAnyHeader()
                    .AllowAnyMethod();
         });
